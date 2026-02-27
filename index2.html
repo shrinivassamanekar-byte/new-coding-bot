@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SMTC - Delay Attribution System</title>
+<link rel="stylesheet" href="styles2.css">
+
+</head>
+<body>
+
+<header>
+<h1>🚌 Super Motor Travels Company</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#">Bus Details</a>
+<a href="#">Delay Entry</a>
+<a href="#">Reports</a>
+<a href="#">About</a>
+</nav>
+<div id="clock"></div>
+</header>
+
+<section class="dashboard">
+
+<div class="card">
+<h3>Total Buses</h3>
+<p id="totalBus">10</p>
+</div>
+
+<div class="card">
+<h3>Delayed</h3>
+<p id="delayedBus">6</p>
+</div>
+
+<div class="card">
+<h3>On Time</h3>
+<p id="onTimeBus">4</p>
+</div>
+
+</section>
+
+
+<section class="formSection">
+
+<h2>Enter Delay Details</h2>
+
+<select id="busNo">
+<option>KA-01-1234</option>
+<option>KA-02-1234</option>
+<option>KA-03-1234</option>
+<option>KA-04-1234</option>
+<option>KA-05-1234</option>
+<option>KA-06-1234</option>
+<option>KA-07-1234</option>
+<option>KA-08-1234</option>
+<option>KA-09-1234</option>
+<option>KA-10-1234</option>
+</select>
+
+<input type="text" id="driver" placeholder="Driver Name">
+
+<input type="text" id="route" placeholder="Route">
+
+<label>Scheduled Time</label>
+<input type="time" id="scheduled">
+
+<label>Delayed Time</label>
+<input type="time" id="actual">
+
+<select id="reason">
+
+<option>Traffic</option>
+<option>Driver issue</option>
+<option>Weather</option>
+<option>Vehicle issue</option>
+
+</select>
+
+<h3>Delay Prediction</h3>
+
+<p id="prediction"></p>
+
+<button type="button" onclick="predictDelay()">Predict Delay</button>
+
+<button onclick="saveData()">Submit</button>
+
+</section>
+
+
+<section>
+
+<h2>Delay Records</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Bus</th>
+<th>Driver</th>
+<th>Route</th>
+<th>Delay</th>
+<th>Status</th>
+<th>Attributed Cause</th>
+
+
+</tr>
+
+</thead>
+
+<tbody id="tableData">
+
+</tbody>
+
+</table>
+<section class="formSection">
+
+<h2>Admin Control</h2>
+
+<p>Click below button to clear all delay records for fresh demo</p>
+
+<button onclick="clearRecords()" style="background:red">
+
+Clear All Delay Records
+
+</button>
+
+</section>
+
+</section>
+
+
+<script src="script2.js"></script>
+
+</body>
+</html>

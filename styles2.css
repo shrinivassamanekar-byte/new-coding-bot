@@ -1,0 +1,104 @@
+body{
+font-family: Arial;
+margin:0;
+background:linear-gradient(120deg,#2980b9,#6dd5fa);
+color:white;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px;
+background:black;
+}
+
+nav a{
+
+color:white;
+margin:10px;
+text-decoration:none;
+
+}
+
+.dashboard{
+
+display:flex;
+justify-content:center;
+gap:20px;
+margin:20px;
+
+}
+
+.card{
+
+background:white;
+color:black;
+padding:20px;
+border-radius:10px;
+width:150px;
+text-align:center;
+
+}
+
+.formSection{
+
+background:white;
+color:black;
+margin:20px;
+padding:20px;
+border-radius:10px;
+
+}
+
+input,select,button{
+
+display:block;
+margin:10px;
+padding:10px;
+width:200px;
+
+}
+
+button{
+
+background:green;
+color:white;
+border:none;
+
+}
+
+table{
+
+width:90%;
+margin:20px;
+background:white;
+color:black;
+
+}
+
+th,td{
+
+padding:10px;
+
+}
+.formSection{
+    width: 400px;          /* fixed width */
+    margin: 40px auto;     /* auto = center horizontally */
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.formSection{
+    width: 400px;
+    margin: auto;
+}
+button:hover{
+
+background:#00c853;
+
+transform:scale(1.05);
+
+}
